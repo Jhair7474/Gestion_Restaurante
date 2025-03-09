@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer";
 import Navegador from "./components/navegador/Navegador";
 import UsersContext from "./context/UsersContext";
 import ReservaContext from "./context/ReserveContext";
+import BotonSubir from "./components/botonSubir/BotonSubir";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Navegador />
           <Rutas />
           <Footer />
+          <BotonSubir />
         </ReservaContext>
       </UsersContext>
     </>
