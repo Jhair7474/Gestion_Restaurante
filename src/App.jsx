@@ -5,16 +5,9 @@ import Navegador from "./components/navegador/Navegador";
 import UsersContext from "./context/UsersContext";
 import ReservaContext from "./context/ReserveContext";
 import BotonSubir from "./components/botonSubir/BotonSubir";
-import DarkModeButton from "./components/DarkModeButton"; 
 import AlertButton from "./components/AlertButton"; 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-mode");
-  };
 
   return (
     <>
@@ -22,7 +15,6 @@ function App() {
         <ReservaContext>
           <Navegador />
           <AlertButton /> 
-          <DarkModeButton toggleDarkMode={toggleDarkMode} /> 
           <Rutas />
           <Footer />
           <BotonSubir />
