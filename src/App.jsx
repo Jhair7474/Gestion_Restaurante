@@ -5,8 +5,8 @@ import Navegador from "./components/navegador/Navegador";
 import UsersContext from "./context/UsersContext";
 import ReservaContext from "./context/ReserveContext";
 import BotonSubir from "./components/botonSubir/BotonSubir";
-import DarkModeButton from "./components/DarkModeButton"; // <-- Importamos el botón de modo oscuro
-import AlertButton from "./components/AlertButton"; // <-- Importar el botón
+import DarkModeButton from "./components/DarkModeButton"; 
+import AlertButton from "./components/AlertButton"; 
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,8 +21,8 @@ function App() {
       <UsersContext>
         <ReservaContext>
           <Navegador />
-          <AlertButton /> {/* <-- Agregar el botón de alerta aquí */}
-          <DarkModeButton toggleDarkMode={toggleDarkMode} /> {/* Botón de modo oscuro */}
+          <AlertButton /> 
+          <DarkModeButton toggleDarkMode={toggleDarkMode} /> 
           <Rutas />
           <Footer />
           <BotonSubir />
